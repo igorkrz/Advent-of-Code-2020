@@ -23,7 +23,7 @@ class Day3
         let step = Step(right: 3, down: 1)
         var point = setPoint(inputPoint: nil, step: step)
         
-        while point.lineCounter != array.count - 1 {
+        while point.lineCounter != array.count {
             point.rowCounter = point.rowCounter % lineLength
             point = setPoint(inputPoint: point, step: step)
         }
@@ -38,7 +38,7 @@ class Day3
         for step in steps {
             var point = setPoint(inputPoint: nil, step: step)
             
-            while point.lineCounter != array.count - 1 {
+            while point.lineCounter != array.count {
                 point.rowCounter = point.rowCounter % lineLength
                 point = setPoint(inputPoint: point, step: step)
             }
@@ -65,9 +65,6 @@ class Day3
         lineLength = array[0].count
         
         for line in array[point.lineCounter ..< array.count] {
-            if line == "" {
-                continue
-            }
             
             if point.rowCounter >= lineLength {
                 return point

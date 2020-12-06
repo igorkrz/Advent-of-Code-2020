@@ -12,7 +12,8 @@ class Day1
 {
     var array: [Int]
     
-    init(array: [Int]) {
+    init(array: [Int])
+    {
         self.array = array
     }
     

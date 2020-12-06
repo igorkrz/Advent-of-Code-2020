@@ -21,9 +21,6 @@ class Day5
     {
         var numberOfSeats = 0
         for seat in array {
-            if seat == "" {
-                continue
-            }
             let row = parseRow(seat: seat)
             let column = parseColumn(seat: seat)
             let seatId = calculateSeatId(row: row, column: column)
@@ -33,6 +30,7 @@ class Day5
             }
         }
         
+        print(numberOfSeats)
         return numberOfSeats
     }
     

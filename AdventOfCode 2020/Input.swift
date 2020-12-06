@@ -9,31 +9,36 @@
 import Foundation
 
 
-class Input {
-    
-    enum InputType {
-        case String
-        case Int
-    }
-    
-    func readInput(_ path: String, _ caseInput: InputType, _ separatedByCharacter: CharacterSet) -> Array<Any> {
+class Input
+{
+    public func readInput<T>(_ path: String, _ separatedByCharacter: CharacterSet) -> [T]
+    {
+        // let pathToFile = "/Users/somePath/\(path)/input.txt"
         
-        if let input = try? String(contentsOfFile: path, encoding: String.Encoding.utf8) {
+        let pathToFile = "Your path to file"
+        
+        do {
+            let input = try String(contentsOfFile: pathToFile, encoding: String.Encoding.utf8)
             let array : [String] = input.components(separatedBy: separatedByCharacter)
-            switch caseInput {
-            case .Int:
+            
+            if T.self == Int.self {
                 let intArray : [Int] = array.compactMap { Int($0) }
-                return intArray as [Int]
-            case .String:
-                return array as [String]
+                return intArray as! [T]
             }
+            else {
+                var stringArray = array
+                if stringArray.last == "" {
+                    stringArray.removeLast()
+                }
+                return stringArray as! [T]
+            }
+        } catch {
+            fatalError(error.localizedDescription)
         }
-        print("Wrong input")
-        return Array()
     }
     
-    func splitArray(_ array: [String], _ separator: Character) -> [[String]]? {
-        
+    public func splitArray(_ array: [String], _ separator: Character) -> [[String]]?
+    {
         // Locate separator
         
         let indexArray = array.compactMap({$0.contains(separator)})
@@ -67,12 +72,14 @@ class Input {
         return nil
     }
     
-    func largeInput(_ path: String) -> String? {
-        
-        if let input = try? String(contentsOfFile: path, encoding: String.Encoding.utf8) {
+    public func largeInput(_ path: String) -> String?
+    {
+        do {
+            let input = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
             return input
+        } catch {
+            return error.localizedDescription
         }
-        return nil
     }
 }
 

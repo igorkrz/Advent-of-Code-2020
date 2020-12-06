@@ -24,9 +24,6 @@ class Day2
         var password = Password()
         
         for line in array {
-            if line == "" {
-                continue
-            }
             
             if counter % 2 == 0 {
                 password = password.setPassword(line: line)

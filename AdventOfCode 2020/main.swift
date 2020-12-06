@@ -15,43 +15,41 @@ let inputFile = Input()
 
 // Solution day 1
 
-let first = inputFile.readInput("Your path to file", .Int, CharacterSet(charactersIn: "\n"))
+let first: [Int] = inputFile.readInput("Day 1", CharacterSet(charactersIn: "\n"))
 
-let day1 = Day1(array: first as! [Int])
+let day1 = Day1(array: first)
 day1.solutionPartOne()
 day1.solutionPartTwo()
 
 // Solution day 2
 
-let second = inputFile.readInput("Your path to file", .String, CharacterSet(charactersIn: ":\n"))
+let second: [String] = inputFile.readInput("Day 2", CharacterSet(charactersIn: ":\n"))
 
-let day2 = Day2(array: second as! [String])
+let day2 = Day2(array: second)
 day2.solutionPartOne()
 day2.solutionPartTwo()
 
 // Solution day 3
 
-let third = inputFile.readInput("Your path to file", .String, CharacterSet(charactersIn: "\n"))
+let third: [String] = inputFile.readInput("Day 3", CharacterSet(charactersIn: "\n"))
 
-let day3 = Day3(array: third as! [String])
+let day3 = Day3(array: third)
 day3.solutionPartOne()
 day3.solutionPartTwo()
 
 // Solution day 4
 
-let fourth = inputFile.readInput("Your path to file", .String, CharacterSet(charactersIn: " \n"))
-
-let day4 = Day4(array: fourth as! [String])
+let fourth: [String] = inputFile.readInput("Day 4", CharacterSet(charactersIn: " \n"))
+let day4 = Day4(array: fourth)
 day4.solutionPartOne()
 day4.solutionPartTwo()
 
 // Solution day 5
 
-let fifth = inputFile.readInput("Your path to file", .String, CharacterSet(charactersIn: "\n"))
+let fifth: [String] = inputFile.readInput("Day 5", CharacterSet(charactersIn: "\n"))
 
-let day5 = Day5(array: fifth as! [String])
+let day5 = Day5(array: fifth)
 let numberOfSeats = day5.solutionPartOne()
-print(numberOfSeats)
 day5.solutionPartTwo(numberOfSeats: numberOfSeats)
 
 
