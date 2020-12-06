@@ -52,4 +52,10 @@ let day5 = Day5(array: fifth)
 let numberOfSeats = day5.solutionPartOne()
 day5.solutionPartTwo(numberOfSeats: numberOfSeats)
 
+// Solution day 6
 
+let sixth: [String] = inputFile.readInput("Day 6", CharacterSet(charactersIn: "\n"))
+
+let day6 = Day6(array: sixth)
+day6.solutionPartOne()
+day6.solutionPartTwo()
