@@ -67,3 +67,11 @@ let seventh: [String] = inputFile.readInput("Day 7", CharacterSet(charactersIn: 
 let day7 = Day7(array: seventh)
 day7.solutionPartOne()
 day7.solutionPartTwo()
+
+// Solution day 8
+
+let eighth: [String] = inputFile.readInput("Day 8", CharacterSet(charactersIn: "\n"))
+
+let day8 = Day8(array: eighth)
+day8.solutionPartOne()
+day8.solutionPartTwo()
