@@ -85,3 +85,11 @@ if let solutionPartOne = day9.solutionPartOne() {
     print(solutionPartOne)
     day9.solutionPartTwo(solutionPartOne: solutionPartOne)
 }
+
+// Solution day 10
+
+let tenth: [Int] = inputFile.readInput("Day 10", CharacterSet(charactersIn: "\n"))
+
+let day10 = Day10(array: tenth)
+day10.solutionPartOne()
+day10.solutionPartTwo()

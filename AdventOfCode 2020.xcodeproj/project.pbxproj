@@ -13,6 +13,7 @@
 		F65F1EE8257EE9300065BFDC /* Day 7.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F1EE7257EE9300065BFDC /* Day 7.swift */; };
 		F65F1EED2582E1520065BFDC /* Day 8.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F1EEC2582E1520065BFDC /* Day 8.swift */; };
 		F65F1EF12583108F0065BFDC /* Day 9.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F1EF02583108F0065BFDC /* Day 9.swift */; };
+		F65F1EF52586D02E0065BFDC /* Day 10.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F1EF42586D02E0065BFDC /* Day 10.swift */; };
 		F6ADD9832577D71E0031547B /* Day 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADD9822577D71E0031547B /* Day 2.swift */; };
 		F6ADD9882577F3A80031547B /* Day 3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADD9872577F3A80031547B /* Day 3.swift */; };
 		F6BFEE432576646200443DA0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BFEE422576646200443DA0 /* main.swift */; };
@@ -45,6 +46,8 @@
 		F65F1EEC2582E1520065BFDC /* Day 8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day 8.swift"; sourceTree = "<group>"; };
 		F65F1EEF258310810065BFDC /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 		F65F1EF02583108F0065BFDC /* Day 9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day 9.swift"; sourceTree = "<group>"; };
+		F65F1EF32586D01D0065BFDC /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
+		F65F1EF42586D02E0065BFDC /* Day 10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day 10.swift"; sourceTree = "<group>"; };
 		F6ADD9822577D71E0031547B /* Day 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day 2.swift"; sourceTree = "<group>"; };
 		F6ADD9842577D7390031547B /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 		F6ADD9862577F39D0031547B /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
@@ -121,6 +124,15 @@
 			path = "Day 9";
 			sourceTree = "<group>";
 		};
+		F65F1EF22586D0010065BFDC /* Day 10 */ = {
+			isa = PBXGroup;
+			children = (
+				F65F1EF32586D01D0065BFDC /* input.txt */,
+				F65F1EF42586D02E0065BFDC /* Day 10.swift */,
+			);
+			path = "Day 10";
+			sourceTree = "<group>";
+		};
 		F6ADD9812577D70F0031547B /* Day 2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +170,7 @@
 		F6BFEE412576646200443DA0 /* AdventOfCode 2020 */ = {
 			isa = PBXGroup;
 			children = (
+				F65F1EF22586D0010065BFDC /* Day 10 */,
 				F65F1EEE258310710065BFDC /* Day 9 */,
 				F65F1EEA2582E1320065BFDC /* Day 8 */,
 				F65F1EE5257EE8EF0065BFDC /* Day 7 */,
@@ -242,6 +255,7 @@
 			files = (
 				F65F1EED2582E1520065BFDC /* Day 8.swift in Sources */,
 				F65F1EF12583108F0065BFDC /* Day 9.swift in Sources */,
+				F65F1EF52586D02E0065BFDC /* Day 10.swift in Sources */,
 				F65F1EE0257BF5740065BFDC /* Day 5.swift in Sources */,
 				F6ADD9882577F3A80031547B /* Day 3.swift in Sources */,
 				F65F1EE4257D04610065BFDC /* Day 6.swift in Sources */,
