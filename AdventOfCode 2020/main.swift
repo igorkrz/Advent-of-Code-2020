@@ -93,3 +93,11 @@ let tenth: [Int] = inputFile.readInput("Day 10", CharacterSet(charactersIn: "\n"
 let day10 = Day10(array: tenth)
 day10.solutionPartOne()
 day10.solutionPartTwo()
+
+// Solution day 11
+
+let eleventh: [String] = inputFile.readInput("Day 11", CharacterSet(charactersIn: "\n"))
+
+let day11 = Day11(array: eleventh)
+day11.solutionPartOne()
+day11.solutionPartTwo()
