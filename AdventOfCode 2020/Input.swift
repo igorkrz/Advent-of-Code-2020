@@ -19,18 +19,14 @@ class Input
         
         do {
             let input = try String(contentsOfFile: pathToFile, encoding: String.Encoding.utf8)
-            let array : [String] = input.components(separatedBy: separatedByCharacter)
+            let array : [String] = input.trimmingCharacters(in: .whitespacesAndNewlines).components(separatedBy: separatedByCharacter)
             
             if T.self == Int.self {
                 let intArray : [Int] = array.compactMap { Int($0) }
                 return intArray as! [T]
             }
             else {
-                var stringArray = array
-                if stringArray.last == "" {
-                    stringArray.removeLast()
-                }
-                return stringArray as! [T]
+                return array as! [T]
             }
         } catch {
             fatalError(error.localizedDescription)
