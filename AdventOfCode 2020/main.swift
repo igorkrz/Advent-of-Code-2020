@@ -101,3 +101,11 @@ let eleventh: [String] = inputFile.readInput("Day 11", CharacterSet(charactersIn
 let day11 = Day11(array: eleventh)
 day11.solutionPartOne()
 day11.solutionPartTwo()
+
+// Solution day 12
+
+let twelveth: [String] = inputFile.readInput("Day 12", CharacterSet(charactersIn: "\n"))
+
+let day12 = Day12(array: twelveth)
+day12.solutionPartOne()
+day12.solutionPartTwo()
