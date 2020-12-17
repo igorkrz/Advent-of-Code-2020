@@ -79,3 +79,11 @@ class Input
     }
 }
 
+enum Part: String
+{
+    typealias RawValue = String
+    
+    case One
+    case Two
+}
+
