@@ -126,3 +126,11 @@ let fourtheenth: [String] = inputFile.readInput("Day 14", CharacterSet(character
 let day14 = Day14(array: fourtheenth)
 day14.solutionPart(part: .One)
 day14.solutionPart(part: .Two)
+
+// Solution day 15
+
+let fifteenth: [Int] = inputFile.readInput("Day 15", CharacterSet(charactersIn: ",\n"))
+
+let day15 = Day15(array: fifteenth)
+day15.solutionPart(part: .One)
+day15.solutionPart(part: .Two)
